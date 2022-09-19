@@ -15,4 +15,4 @@ RUN ./configure --enable-optimizations
 RUN make altinstall
 COPY /app-text/hello_mobileye.txt /tmp
 WORKDIR "/Python-3.8.2"
-CMD python3.8 -m http.server --bind --directory /tmp/ 80
+CMD python3.8 -m http.server --directory /tmp/ 80
